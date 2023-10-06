@@ -1,18 +1,18 @@
 require_relative 'my_enumerable'
 
-class MyList                
-    include MyEnumerable
+class MyList
+  include MyEnumerable
 
 
 
-        def initialize(*items)
-         @list = items
-        end
-    end
+  def initialize(*items)
+    @list = items
+  end
+end
 
-    def each(&block)
-        @list.each(&block)
-    end
+def each(&block)
+  @list.each(&block)
+end
 
 list = MyList.new(1, 2, 3, 4, 5, 6)
 
